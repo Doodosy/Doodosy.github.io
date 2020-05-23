@@ -1,0 +1,241 @@
+// intlTelInput
+.iti
+	width 100%
+	margin 5px auto
+.valid-msg
+.error-msg
+	&.hide
+		display none
+
+// Form
+.dct-form-wrapper
+	.dct-product-image
+		display block
+		width auto
+		max-width 100%
+		margin 40px auto
+.dct-form-container
+	max-width 800px
+	margin 20px auto 
+	background-color #72b1ec
+	border-radius 6px
+	padding 20px 15px
+	font-family Arial, Helvetica, sans-serif
+	@media (min-width 576px)
+		padding 40px
+.dct-form
+	label
+		display inline-block
+		margin 10px 0 5px
+		font-size 16px
+	input
+		display block
+		width 100%
+		outline 0
+		font-size 16px
+		line-height 41px
+		color #1f1f1f
+		border-radius 10px
+		margin 5px auto
+		padding 0 10px
+		text-align left
+		border 1px solid transparent
+		border-bottom 1px solid #ddd
+		box-shadow inset 0 2px 4px rgba(0, 0, 0, 0.2), 0 -1px 1px #fff, 0 1px 0 #fff
+		box-sizing border-box
+	button
+		max-width 400px
+		margin 0 auto 40px
+		display flex
+		align-items center
+		justify-content center
+		border-style solid
+		border-width 1px
+		border-color rgb(223, 125, 31)
+		border-radius 10px
+		background-image linear-gradient(-90deg, rgb(255, 214, 84) 0%, rgb(255, 199, 50) 100%)
+		width 100%
+		min-height 60px
+		font-family "Arial Black", Gadget, sans-serif
+		color #000001
+		font-size 24px
+		cursor pointer
+		margin-top 20px
+		margin-bottom 7px
+		&:hover 
+			filter saturate(2.5)
+span 
+	&.button-icon 
+		display inline-block
+		vertical-align middle
+		margin-right 5px
+		width 36px
+		height 30px
+		background-position -170px -6px
+	&.text 
+		display inline-block
+		height auto
+		font-size 16px
+.sprite 
+	background url("../img/sprite.png") no-repeat center center
+
+// delivery information
+.delivery-info 
+	hr
+		border none
+		border-top 1px solid rgb(255, 255, 255, 0.6)
+.delivery-show-text 
+	cursor pointer
+	h3 
+		margin 0 0 20px
+		color #ffe73c
+	.pseudo-link 
+		display flex
+		align-items center
+		margin-bottom 20px
+		color #ffe73c
+		.pseudo-link-text 
+			text-decoration underline
+		.lsaquo 
+			position relative
+			top 2px
+			display inline-block
+			margin 0 0 0 10px
+			font-size 20px
+			transform rotate(-90deg)
+			transition all 0.3s ease
+	&.active 
+		.pseudo-link 
+			.lsaquo 
+				transform rotate(-270deg)
+.delivery-hide-text 
+	display none
+	&.show
+		display block
+	ul 
+		list-style-type circle
+		padding-left 30px
+		margin 0px 0px 20px
+		li 
+			margin-bottom 16px
+			margin-left 0px
+			&:last-child 
+				margin-bottom 0
+
+// price
+.dct-product-price
+	display flex
+	flex-wrap wrap
+	align-items center
+	justify-content center
+	.dct-price-old
+	.dct-price-new
+		margin 0 10px 10px
+	.dct-price-new
+		font-weight bold
+		color #ffe73c
+	.dct-price-old-amount
+		text-decoration line-through
+
+// timer
+.dct-timer-container 
+	display table
+	margin 20px auto
+	text-align center
+	.dct-dot 
+		font-size 37px
+		line-height 73px
+	.dct-timer 
+		.dct-num 
+			margin-top 10px
+			margin 0 2.5px
+			background-color #fff
+			border-radius 3px
+			display inline-block
+			position relative
+			padding 0 8px
+			font-size 24px
+			line-height 42px
+			font-weight 600
+			color #000
+			@media (min-width 576px)
+				font-size 28px
+				padding 0 10px
+
+// button go to land
+.dct-go-land
+	display flex
+	align-items center
+	justify-content center
+.dct-go-land-btn
+	background-color #f00
+	color #fff!important
+	display inline-block
+	padding 10px 30px
+	margin 0 auto
+	font-size 25px
+	box-shadow 2px 3px 8px #999
+	text-decoration none!important
+	border-radius 8px
+	border 3px solid #fff
+	margin 20px 0px 30px
+	line-height 27px
+	text-transform uppercase
+	text-align center
+	transition all .3s ease-in 0s
+	&:hover 
+		transform scale(1.1)
+
+// privacy policy
+.dct-privacy-policy
+	padding 10px
+	font-family inherit
+	text-align center
+	// background-color #222222
+	a
+		color inherit
+
+// bottom fixed block
+.dct-bottom-sticky
+	display none
+	position fixed
+	z-index 9999
+	padding 10px
+	right 0px
+	bottom 0px
+	left 0px
+	background url("../img/background.png")
+	box-shadow 0px 0px 10px #666
+	font-family "Open Sans", sans-serif
+	text-align center
+	transition all .1s ease
+	&.no-sticky
+		position static
+	.dct-sticky-text
+		margin 0px 10px
+		font-size 14px
+		line-height 1.4
+		text-align center
+		color #ffffff
+	.dct-sticky-product-name
+		text-transform uppercase
+	.dct-sticky-btn
+		display inline-block
+		vertical-align middle
+		padding 10px 50px
+		margin 0px 10px
+		font-size 18px
+		font-weight bold
+		line-height 1.5
+		text-align center
+		text-transform uppercase
+		text-decoration none
+		text-shadow 0px -1px 0px rgba(0, 0, 0, 0.2)
+		background-color #d23085
+		color #ffffff
+		white-space nowrap
+		cursor pointer
+		border-radius 30px
+		transition all 0.3s
+		&:hover 
+			transform scale(1.05)
